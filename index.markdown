@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<header>
+  <img src="/assets/images/head.png" alt="Moje zdjęcie profilowe">
+  <p>Hello, I'm Bartosz Wackowski. I'm IT engineerr that is now improving his skills in Managment. I work as Project Coordinator for UK and Polish team.
+  My passion is dancing. I've spent 10 years in ballroom dancing and now I'm impoving myself in West Coast Swing. My other hobby is playing as a goalkeeper
+  in academic team. My head is full of ideas and I hope You will like my posts. I'm always open to discussion and cooperation.
+</p>
+</header>
+
+<main>
+  <section>
+    <h2>Blog</h2>
+    <ul>
+      {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/blog">Zobacz wszystkie wpisy</a>
+  </section>
+
+  <section>
+    <h2>Umiejętności</h2>
+    <ul>
+      <li>Umiejętność 1</li>
+      <li>Umiejętność 2</li>
+      <li>Umiejętność 3</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="#">Projekt 1</a></li>
+      <li><a href="#">Projekt 2</a></li>
+      <li><a href="#">Projekt 3</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nagrody i osiągnięcia</h2>
+    <p>Tutaj możesz wspomnieć o swoich nagrodach i osiągnięciach.</p>
+  </section>
+
+  <section>
+    <h2>Opinie klientów lub pracodawców</h2>
+    <p>Tutaj możesz dodać opinie swoich klientów lub pracodawców.</p>
+  </section>
+
+  <section>
+    <h2>Współprace</h2>
+    <p>Tutaj możesz opisać swoje poprzednie i obecne współprace.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© {{ site.author.name }}, {{ "now" | date: "%Y" }}</p>
+  <ul>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">GitHub</a></li>
+  </ul>
+</footer>
