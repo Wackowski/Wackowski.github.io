@@ -2,8 +2,9 @@
 layout: default
 ---
 
+
 <header>
-  <img src="/assets/images/head.png" alt="Moje zdjęcie profilowe">
+  <img src="/assets/images/head.png" alt="Bartosz wackowski's photo">
   <p>Hello, I'm Bartosz Wackowski. I'm IT engineerr that is now improving his skills in Managment. I work as Project Coordinator for UK and Polish team.
   My passion is dancing. I've spent 10 years in ballroom dancing and now I'm impoving myself in West Coast Swing. My other hobby is playing as a goalkeeper
   in academic team. My head is full of ideas and I hope You will like my posts. I'm always open to discussion and cooperation.
