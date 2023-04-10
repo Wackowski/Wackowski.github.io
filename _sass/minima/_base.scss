@@ -252,3 +252,27 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+
+/**
+* 3 articles positioning
+*/
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.post-item {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.post-item img {
+  width: 100%;
+  height: auto;
+}
+.post-item h3 {
+  margin: 0 0 10px;
+}

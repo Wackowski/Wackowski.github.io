@@ -13,26 +13,21 @@ layout: default
 
 <main>
   <section>
-    <h2>Blog</h2>
-    <ul>
-      {% for post in site.posts limit:3 %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <p>{{ post.excerpt }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-    <a href="/blog">Zobacz wszystkie wpisy</a>
-  </section>
-
-  <section>
-    <h2>Umiejętności</h2>
-    <ul>
-      <li>Umiejętność 1</li>
-      <li>Umiejętność 2</li>
-      <li>Umiejętność 3</li>
-    </ul>
-  </section>
+  <h2>Blog</h2>
+  <ul class="posts-list">
+    {% for post in site.posts limit:3 %}
+    <li class="post-item">
+      <a href="{{ post.url }}">
+        {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}" />
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/blog">Zobacz wszystkie wpisy</a>
+</section>
 
   <section>
     <h2>Portfolio</h2>
