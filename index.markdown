@@ -17,7 +17,7 @@ layout: default
   <ul class="posts-list">
     {% for post in site.posts limit:3 %}
     <li class="post-item">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url | relative_url }}">
         {% if post.image %}
         <img src="{{ post.image }}" alt="{{ post.title }}" />
         {% endif %}
