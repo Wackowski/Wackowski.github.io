@@ -5,10 +5,12 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
+  
 
   <body>
 
     {%- include header.html -%}
+    
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -19,5 +21,32 @@
     {%- include footer.html -%}
 
   </body>
-
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+  
+    fetch("/search_data.json")
+      .then(response => response.json())
+      .then(data => {
+        searchInput.addEventListener("input", function() {
+          searchResults.innerHTML = "";
+          const searchTerm = searchInput.value.trim().toLowerCase();
+  
+          if (searchTerm.length > 0) {
+            data.forEach(post => {
+              if (post.content.toLowerCase().includes(searchTerm) || post.title.toLowerCase().includes(searchTerm)) {
+                const listItem = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = post.url;
+                link.textContent = post.title;
+                listItem.appendChild(link);
+                searchResults.appendChild(listItem);
+              }
+            });
+          }
+        });
+      });
+  });
+  </script>
 </html>
