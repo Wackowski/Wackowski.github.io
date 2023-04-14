@@ -6,3 +6,4 @@ Możesz także dodać paginację do stron z kategoriami i tagami, aby czytelnicy
 Jeśli chcesz dodać więcej funkcji do filtrowania i sortowania postów na podstawie tagów i kategorii, możesz rozważyć użycie wtyczek Jekyll, takich jak jekyll-tagging lub jekyll-archives, lub napisać własne skrypty Liquid do tworzenia bardziej zaawansowanych funkcji.
 
 Do zmiany header.html - wyszukiwarka
+Do naprawy - tagi na artykułach - żeby generowało stronę tylko z tymi tagami
