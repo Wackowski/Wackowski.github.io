@@ -276,3 +276,38 @@ table {
 .post-item h3 {
   margin: 0 0 10px;
 }
+
+.social-share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-share-buttons a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-share-buttons a:hover {
+  opacity: 0.9;
+}
+
+.social-share-buttons .fab {
+  margin-right: 5px;
+}
+
+.social-share-buttons .fa-facebook-f {
+  background-color: #1877f2;
+}
+
+.social-share-buttons .fa-twitter {
+  background-color: #1da1f2;
+}
+.share-and-comment-text{
+  text-align: center;
+}

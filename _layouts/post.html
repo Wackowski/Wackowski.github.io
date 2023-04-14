@@ -21,6 +21,20 @@ layout: default
     {{ content }}
   </div>
 
+  <h1 class="share-and-comment-text">Share it below and check the comment section below</h1>
+  <div class="social-share-buttons">
+    <!-- Facebook Share Button -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" title="Udostępnij na Facebooku">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+  
+    <!-- Twitter Share Button -->
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}" target="_blank" title="Udostępnij na Twitterze">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+  </div>
+  
+
   {% include disqus_comments.html %}
 
 
