@@ -15,6 +15,8 @@ echo comments: true >>"%post_path%"
 
 if not "%image_path%"=="" echo image: %image_path% >>"%post_path%"
 
+echo categories: [] >>"%post_path%"
+echo tags: [] >>"%post_path%"
 echo --- >>"%post_path%"
 
 echo Plik postu %post_filename% został utworzony w katalogu _posts.

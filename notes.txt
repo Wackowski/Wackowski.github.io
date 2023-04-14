@@ -1,0 +1,6 @@
+czy dodać poniższe wskazówki
+Dodatkowe wskazówki:
+
+Jeśli chcesz użyć zarówno wielkich, jak i małych liter w tagach i kategoriach, możesz dodać filtr capitalize w kodzie szablonów, aby je sformatować. Na przykład, zamiast {{ category[0] }}, użyj {{ category[0] | capitalize }}.
+Możesz także dodać paginację do stron z kategoriami i tagami, aby czytelnicy mogli przeglądać wpisy na wielu stronach. Aby to zrobić, będziesz musiał zainstalować i skonfigurować wtyczkę paginacji Jekyll, taką jak jekyll-paginate-v2.
+Jeśli chcesz dodać więcej funkcji do filtrowania i sortowania postów na podstawie tagów i kategorii, możesz rozważyć użycie wtyczek Jekyll, takich jak jekyll-tagging lub jekyll-archives, lub napisać własne skrypty Liquid do tworzenia bardziej zaawansowanych funkcji.
