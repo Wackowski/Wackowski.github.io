@@ -2,7 +2,7 @@
 layout: default
 ---
 
-
+<!---
 <header>
   <img src="/assets/images/head.png" alt="Bartosz wackowski's photo">
   <p>Hello, I'm Bartosz Wackowski. I'm IT engineerr that is now improving his skills in Managment. I work as Project Coordinator for UK and Polish team.
@@ -62,3 +62,5 @@ layout: default
     <li><a href="#">GitHub</a></li>
   </ul>
 </footer>
+-->
+

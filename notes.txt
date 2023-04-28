@@ -7,3 +7,6 @@ Jeśli chcesz dodać więcej funkcji do filtrowania i sortowania postów na pods
 
 Do zmiany header.html - wyszukiwarka
 Do naprawy - tagi na artykułach - żeby generowało stronę tylko z tymi tagami
+Do naprawy - A href do linked in Arkadiusza w nowej karcie
+DO implementacji - cookies i ostrzżenia
+Do implementacji - responsywność  na różnych urządzeniach
