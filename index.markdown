@@ -1,6 +1,27 @@
 ---
 layout: default
 ---
+<!-- Kontener główny -->
+<div class="main-container">
+
+  <!-- Część lewa -->
+  <div class="left-section">
+    <img src="your-image-url.jpg" alt="Twoje zdjęcie" style="width: 100%;" />
+  </div>
+
+  <!-- Część prawa -->
+  <div class="right-section" style=" background-color: #168EE4">
+    <div style="text-align: center; color: white;">
+      <h2>O mnie</h2>
+      <p>
+        Tutaj możesz dodać krótki opis o sobie, swojej działalności lub czymkolwiek innym, co chciałbyś tutaj umieścić.
+      </p>
+    </div>
+    <a href="/contact" style="background-color: black; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;">CONTACT ME</a>
+  </div>
+
+</div>
+
 
 <!---
 <header>
