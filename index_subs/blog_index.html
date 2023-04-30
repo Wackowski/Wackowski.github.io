@@ -1,16 +1,16 @@
 ---
 layout: default
-title: TAGS
-permalink: /tags/
+title: BLOG
+permalink: /categories/
 ---
 
 <h1>{{ page.title }}</h1>
 <ul>
-  {% for tag in site.tags %}
+  {% for category in site.categories %}
     <li>
-      <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+      <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
       <ul>
-        {% for post in tag[1] %}
+        {% for post in category[1] %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
