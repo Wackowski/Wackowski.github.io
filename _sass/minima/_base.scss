@@ -335,3 +335,48 @@ table {
   .share-and-comment-text {
   text-align: center;
   }
+
+  /*stylizacja paska wyszukiwarki*/
+/* Kontener dla pola wyszukiwania i wyników wyszukiwania */
+.trigger {
+  position: relative;
+  display: inline-block;
+}
+  /* Główny kontener wyników wyszukiwania */
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #168EE4;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 100%; /* Dodaj tę linię */
+}
+
+/* Pokaż wyniki wyszukiwania, gdy są dostępne */
+#search-input:focus ~ #search-results {
+  display: block;
+}
+
+/* Stylowanie elementów listy wyników wyszukiwania */
+#search-results li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stylowanie linków w wynikach wyszukiwania */
+#search-results li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Zmiana tła i koloru tekstu linków w wynikach wyszukiwania podczas najechania myszką */
+#search-results li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
