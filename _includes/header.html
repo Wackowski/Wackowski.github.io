@@ -1,31 +1,51 @@
 <!--skrypt do wyszukiwarki-->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const searchInput = document.getElementById("search-input");
-    const searchResults = document.getElementById("search-results");
-  
-    fetch("/search_data.json")
-      .then(response => response.json())
-      .then(data => {
-        searchInput.addEventListener("input", function() {
-          searchResults.innerHTML = "";
-          const searchTerm = searchInput.value.trim().toLowerCase();
-  
-          if (searchTerm.length > 0) {
-            data.forEach(post => {
-              if (post.content.toLowerCase().includes(searchTerm) || post.title.toLowerCase().includes(searchTerm)) {
-                const listItem = document.createElement("li");
-                const link = document.createElement("a");
-                link.href = post.url;
-                link.textContent = post.title;
-                listItem.appendChild(link);
-                searchResults.appendChild(listItem);
-              }
-            });
-          }
-        });
+  const searchInput = document.getElementById("search-input");
+  const searchResults = document.getElementById("search-results");
+
+  fetch("/search_data.json")
+    .then(response => response.json())
+    .then(data => {
+      searchInput.addEventListener("input", function() {
+        searchResults.innerHTML = "";
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        if (searchTerm.length > 0) {
+          data.forEach(post => {
+            if (post.content.toLowerCase().includes(searchTerm) || post.title.toLowerCase().includes(searchTerm)) {
+              const listItem = document.createElement("li");
+              const link = document.createElement("a");
+              link.href = post.url;
+              link.textContent = post.title;
+
+              link.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = event.target.href;
+              });
+
+              listItem.appendChild(link);
+              searchResults.appendChild(listItem);
+            }
+          });
+        }
       });
-  });
+
+      // Ukryj wyniki wyszukiwania, gdy pole wyszukiwania traci focus
+      searchInput.addEventListener("blur", function() {
+        setTimeout(() => {
+          searchResults.style.display = "none";
+        }, 150);
+      });
+
+      // Pokaż wyniki wyszukiwania, gdy pole wyszukiwania ma focus
+      searchInput.addEventListener("focus", function() {
+        searchResults.style.display = "block";
+      });
+    });
+});
+
+
   </script>
 <header class="site-header" role="banner">
   <div class="wrapper">
