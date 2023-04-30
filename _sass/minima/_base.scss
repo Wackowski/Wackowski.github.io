@@ -353,7 +353,8 @@ table {
     padding: 0;
     z-index: 1000;
     display: none;
-    min-width: 100%; /* Dodaj tę linię */
+    max-width: 100%;
+    border: 1px solid #ccc;
 }
 
 /* Pokaż wyniki wyszukiwania, gdy są dostępne */
@@ -373,6 +374,11 @@ table {
   color: #FFFFFF;
   padding: 10px;
   text-decoration: none;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 19ch;
+  text-align: center;
 }
 
 /* Zmiana tła i koloru tekstu linków w wynikach wyszukiwania podczas najechania myszką */
