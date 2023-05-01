@@ -1,32 +1,33 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+  <div class="wrapper footer">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+      <div class="footer-left">
+        <a href="https://www.linkedin.com/in/aleksander-szopny/" target="_blank" rel="noopener">DESIGNED BY<br>ALEKSANDER SZOPNY</a>
+      </div>
+
+      <div class="footer-divider">
+        <span>|</span>
+      </div>
+
+      <div class="footer-center">
+        <p>Bartosz Wackowski</p>
+      </div>
+
+      <div class="footer-right">
+        <ul class="social-media-list">
+          <li>
+            <a href="LINK1" target="_blank" rel="noopener"><i class="ikonka1"></i> Ikona 1</a>
+          </li>
+          <li>
+            <a href="LINK2" target="_blank" rel="noopener"><i class="ikonka2"></i> Ikona 2</a>
+          </li>
+          <li>
+            <a href="LINK3" target="_blank" rel="noopener"><i class="ikonka3"></i> Ikona 3</a>
+          </li>
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
       </div>
     </div>
 
