@@ -6,7 +6,7 @@ layout: default
 
   <!-- Część lewa -->
   <div class="left-section">
-    <img src="your-image-url.jpg" alt="Twoje zdjęcie" style="width: 100%;" />
+    <img src="./assets/images/profile_test.png" alt="Profilowe zdjęcie" class="profile-image">
   </div>
 
   <!-- Część prawa -->
