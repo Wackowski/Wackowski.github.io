@@ -6,7 +6,7 @@ layout: default
 
   <!-- Część lewa -->
   <div class="left-section">
-    <img src="./assets/images/profile_test.png" alt="Profilowe zdjęcie" class="profile-image">
+    <img src="./assets/images/1000014422.jpg" alt="Profilowe zdjęcie" class="profile-image">
   </div>
 
   <!-- Część prawa -->
@@ -14,7 +14,7 @@ layout: default
     <div style="text-align: center; color: white;">
       <h2>O mnie</h2>
       <p>
-        Tutaj możesz dodać krótki opis o sobie, swojej działalności lub czymkolwiek innym, co chciałbyś tutaj umieścić.
+        Koordynator projektu, zarządzam dwoma zespołami techników drugiej linii wsparcia. Dodatkowo koordynuję przepływ przesyłek urządzeń peryferyjnych po całej Wielkiej Brytanii. Realizuję się w hobby będąc instruktorem tańca WCS.
       </p>
     </div>
     <a href="/contact" style="background-color: black; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;">CONTACT ME</a>
