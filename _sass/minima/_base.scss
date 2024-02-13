@@ -514,3 +514,31 @@ table {
 .social-media-list a .icon {
   margin-right: 5px;
 }
+
+.footer-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-media-icons a img {
+  width: 40px; /* Dostosuj rozmiar ikon do swoich potrzeb */
+  margin: 0 10px; /* Dystans między ikonami */
+  transition: transform 0.3s ease; /* Animacja dla ikon */
+}
+
+.social-media-icons a:hover img {
+  transform: scale(1.1); /* Efekt powiększenia przy najechaniu */
+}
+
+.catchy-slogan {
+  font-size: 20px; /* Dostosuj do swoich potrzeb */
+  margin-bottom: 20px;
+}
+
+.designer-signature {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+}
